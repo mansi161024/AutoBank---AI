@@ -1,0 +1,29 @@
+.planner-hero {
+  background: linear-gradient(135deg, var(--navy-900), var(--navy-950));
+  color: #fff; border-radius: var(--radius-lg); padding: 24px 28px;
+}
+.planner-hero .eyebrow { color: #9ba5cf; }
+.planner-hero h2 { color: #fff; font-size: 22px; margin-top: 6px; }
+
+.expense-input-row { display: grid; grid-template-columns: 1fr 160px; gap: 12px; align-items: end; margin-bottom: 4px; }
+@media (max-width: 640px) { .expense-input-row { grid-template-columns: 1fr; } }
+
+.predict-row { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--hairline); gap: 14px; flex-wrap: wrap; }
+.predict-row:last-child { border-bottom: none; }
+.predict-row .predict-label { font-weight: 600; font-size: 13.5px; min-width: 200px; }
+.predict-row .predict-amts { display: flex; gap: 18px; font-family: var(--font-mono); font-size: 12.5px; }
+.predict-row .predict-amts .k { color: var(--ink-faint); margin-right: 4px; }
+
+.savings-split-row { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--hairline); gap: 14px; }
+.savings-split-row:last-child { border-bottom: none; }
+.savings-split-row .pct-pill { width: 46px; height: 46px; border-radius: 50%; background: var(--ledger-green-light); color: var(--ledger-green-deep); display: flex; align-items: center; justify-content: center; font-family: var(--font-mono); font-weight: 700; font-size: 13px; flex-shrink: 0; }
+
+.job-toggle { display: flex; gap: 10px; background: var(--paper-dim); border-radius: 999px; padding: 4px; width: fit-content; }
+.job-toggle button { border: none; background: transparent; padding: 8px 18px; border-radius: 999px; font-size: 13px; font-weight: 600; color: var(--ink-soft); }
+.job-toggle button.active { background: var(--paper-raised); color: var(--ink); box-shadow: var(--shadow-card); }
+
+.runway-meter { text-align: center; padding: 10px 0; }
+.runway-meter .num { font-family: var(--font-display); font-size: 46px; font-weight: 700; }
+.runway-meter .unit { font-size: 13px; color: var(--ink-soft); }
+
+.best-loan-strip { display: flex; align-items: center; justify-content: space-between; background: var(--ledger-green-light); border: 1px solid var(--ledger-green); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 18px; flex-wrap: wrap; gap: 12px; }
